@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Android test suite on android Phone">
+
+    <parameter name="OS" value="Android"/>
+    <parameter name="appType" value="Phone"/>
+    <parameter name="deviceType" value="Emulator"/>
+    <!--<parameter name="deviceName" value=""/>-->
+    <parameter name="version" value="8"/>
+    <parameter name="moduleName" value="APPS"/>
+    <parameter name="appName" value="Cricbuzz.apk"/>
+    <parameter name="file" value="src/app"/>
+    <parameter name="fileName" value="app"/>
+
+    <test name="Go to Home page" preserve-order="true">
+        <classes>
+            <class name="TestPage.TestHomepage"/>
+            <class name="TestPointTablePackage.TestPointTablePage"/>
+            <class name="TestStatusPackage.TestStatusPage"/>
+            <class name="TestPoint.TestPointPage"/>
+        </classes>
+    </test>
+</suite>
